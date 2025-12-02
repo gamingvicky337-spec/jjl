@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil - Kontraktor & Jasa Interior Terpercaya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-light sticky-top">
+      <div class="container py-3">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand fw-bold text-warning" href="index.html"
+            >KONTRAKTORKU</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="profil.html">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="layanan.html">Layanan</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Portofolio
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="portofolio-interior.html"
+                      >Interior</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="portofolio-bangunan.html"
+                      >Bangunan Baru</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="portofolio-renovasi.html"
+                      >Renovasi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="karir.html">Karir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="kontak.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-profil text-light text-center py-5">
+      <div class="container py-5">
+        <h1 class="display-4 fw-bold" data-aos="fade-up">Profil Perusahaan</h1>
+        <p class="lead" data-aos="fade-up" data-aos-delay="200">
+          Sejarah, Visi, Misi, dan Tim Profesional Kami
+        </p>
+      </div>
+    </section>
+
+    <!-- Sejarah Perusahaan -->
+    <section id="sejarah" class="py-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="text-center mb-5 text-warning" data-aos="fade-up">
+          Sejarah Perusahaan
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <p>
+              Kami berdiri sejak tahun 2015, dengan semangat untuk memberikan
+              solusi konstruksi dan desain interior terbaik. Dengan pengalaman
+              lebih dari 10 tahun, kami telah menyelesaikan ratusan proyek besar
+              dan kecil, baik untuk individu maupun korporasi.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <!-- Container untuk gambar sejarah -->
+            <div class="history-image-container position-relative">
+              <img
+                id="historyImage"
+                src="img/sejarah1.jpg"
+                class="img-fluid rounded shadow history-image"
+                alt="Sejarah Perusahaan"
+              />
+            </div>
+            <!-- Indikator Gambar -->
+            <div class="mt-3">
+              <span class="dot active" onclick="currentHistoryImage(0)"></span>
+              <span class="dot" onclick="currentHistoryImage(1)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang-kami" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-warning" data-aos="fade-up">
+          Tentang Kami
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up">
+            <h3 class="text-warning">Visi</h3>
+            <p>
+              Menjadi perusahaan kontraktor dan interior terkemuka yang
+              memberikan solusi terbaik untuk hunian dan ruang kerja yang indah,
+              fungsional, dan berkelanjutan.
+            </p>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-warning">Misi</h3>
+            <ul>
+              <li>
+                Memberikan layanan terbaik dengan kualitas dan ketepatan waktu.
+              </li>
+              <li>Mengutamakan kepuasan klien sebagai prioritas utama.</li>
+              <li>
+                Menggunakan material dan teknologi terbaru untuk hasil terbaik.
+              </li>
+              <li>Membangun tim profesional yang terus berkembang.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet The Team -->
+    <section id="team" class="py-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="text-center mb-5 text-warning" data-aos="fade-up">
+          Work with the Best: Meet The Team
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="team-member text-center">
+              <img
+                src="img/team1.png"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 1"
+              />
+              <h5 class="mt-3">Vicky Maulana</h5>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member text-center">
+              <img
+                src="img/team2.png"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 2"
+              />
+              <h5 class="mt-3">Adieb Ihsan</h5>
+              <p>Lead Architect</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="team-member text-center">
+              <img
+                src="img/team3.png"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 3"
+              />
+              <h5 class="mt-3">Lana</h5>
+              <p>Project Manager</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="team-member text-center">
+              <img
+                src="img/team4.jpg"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 4"
+              />
+              <h5 class="mt-3">Muhammad</h5>
+              <p>Interior Designer</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member text-center">
+              <img
+                src="img/team5.webp"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 5"
+              />
+              <h5 class="mt-3">Eko Wijaya</h5>
+              <p>Site Supervisor</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="team-member text-center">
+              <img
+                src="img/team6.jpg"
+                class="img-fluid rounded-circle team-img"
+                alt="Team 6"
+              />
+              <h5 class="mt-3">pk tele</h5>
+              <p>Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section id="motivation" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div
+              class="motivation-card bg-warning text-dark p-5 rounded text-center shadow"
+              data-aos="fade-up"
+            >
+              <i class="fas fa-quote-left fa-2x mb-3"></i>
+              <p class="lead">
+                "Keunggulan bukanlah tindakan yang luar biasa, tetapi kebiasaan
+                yang luar biasa."
+              </p>
+              <footer class="blockquote-footer mt-3">— Aristotle</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p>&copy; 2025 KontraktorKu. Semua Hak Dilindungi.</p>
+        <div class="mt-2">
+          <a href="#" class="text-light mx-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-light mx-2"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#" class="text-light mx-2"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+
+      // Script untuk galeri sejarah perusahaan
+      const historyImages = ["img/sejarah1.jpg", "img/sejarah2.jpg"];
+
+      let currentHistoryIndex = 0;
+      const totalHistoryImages = historyImages.length;
+      const historyImageElement = document.getElementById("historyImage");
+
+      function currentHistoryImage(index) {
+        showHistoryImage(index);
+      }
+
+      function showHistoryImage(index) {
+        if (index < 0 || index >= totalHistoryImages) return;
+
+        historyImageElement.classList.add("zoom-out");
+        setTimeout(() => {
+          historyImageElement.src = historyImages[index];
+          setTimeout(() => {
+            historyImageElement.classList.remove("zoom-out");
+          }, 10);
+        }, 10);
+
+        currentHistoryIndex = index;
+        updateHistoryDots();
+      }
+
+      function updateHistoryDots() {
+        const dots = document.querySelectorAll(".dot");
+        dots.forEach((dot, index) => {
+          if (index === currentHistoryIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      setInterval(() => {
+        currentHistoryIndex = (currentHistoryIndex + 1) % totalHistoryImages;
+        showHistoryImage(currentHistoryIndex);
+      }, 5000);
+
+      // Efek zoom pada gambar tim
+      document.querySelectorAll(".team-img").forEach((img) => {
+        img.addEventListener("mouseenter", function () {
+          this.style.transform = "scale(1.1)";
+          this.style.transition = "transform 0.3s ease";
+        });
+        img.addEventListener("mouseleave", function () {
+          this.style.transform = "scale(1)";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,467 @@
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hero {
+  background: url("img/4.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Agar teks tetap terbaca */
+  z-index: 0;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer a i {
+  font-size: 1.5rem;
+}
+
+/* === Gaya untuk galeri tim === */
+.team-image-container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Animasi zoom out */
+  transition: transform 1.5s ease-in-out;
+}
+
+.team-image.zoom-out {
+  transform: scale(1.1); /* Memperbesar sedikit */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #ffc107; /* Warna kuning Bootstrap */
+}
+
+/* === Gaya untuk Proses Kerja === */
+.process-step {
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* === Gaya untuk Testimonial === */
+.testimonial-card {
+  border-left: 4px solid #ffc107;
+}
+
+/* === Gaya untuk Klien === */
+.client-logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+}
+
+/* === Gaya untuk FAQ === */
+.accordion-button {
+  font-weight: bold;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #ffc107;
+}
+
+/* === Gaya untuk Logo Klien === */
+.client-logo-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.client-logo {
+  max-height: 80px; /* Batasi tinggi logo */
+  max-width: 100%; /* Pastikan logo tidak melebihi lebar container */
+  object-fit: contain; /* Jaga aspek rasio logo */
+  filter: grayscale(100%); /* Buat logo terlihat sedikit pudar */
+  transition: filter 0.3s ease;
+}
+
+.client-logo-container:hover .client-logo {
+  filter: grayscale(0%); /* Kembalikan warna saat hover */
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* === Gaya untuk Hero Profil === */
+.hero-profil {
+  background: url("img/business-people-holding-cup-cheering-R.png") no-repeat
+    center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-profil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-profil > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Gambar Sejarah Perusahaan === */
+.history-image-container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.history-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 1.5s ease-in-out;
+}
+
+.history-image.zoom-out {
+  transform: scale(1.1);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #ffc107;
+}
+
+/* === Gaya untuk Tim === */
+.team-member {
+  margin-bottom: 2rem;
+}
+
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #ffc107;
+}
+
+/* === Gaya untuk Motivation Card === */
+.motivation-card {
+  border-left: 5px solid #000;
+  font-style: italic;
+}
+
+/* === Gaya untuk Hero Layanan === */
+.hero-layanan {
+  background: url("img/hero-layanan-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-layanan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-layanan > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Kartu Moto & Layanan === */
+.moto-card,
+.service-card {
+  background-color: #222;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.moto-card:hover,
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* === Gaya untuk Kartu Layanan === */
+.service-card {
+  background-color: #333;
+}
+
+/* === Gaya untuk Hero Portofolio === */
+.hero-portofolio {
+  background: url("img/interiorbg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-portofolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-portofolio > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Item Portofolio === */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h5 {
+  margin: 0;
+}
+
+.portfolio-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* === Gaya untuk Hero Portofolio Bangunan Baru === */
+.hero-portofolio-bangunan {
+  background: url("img/bangunanbg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-portofolio-bangunan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-portofolio-bangunan > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Hero Portofolio Renovasi === */
+.hero-portofolio-renovasi {
+  background: url("img/renovasibg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-portofolio-renovasi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-portofolio-renovasi > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Hero Karir === */
+.hero-karir {
+  background: url("img/karirbg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-karir::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-karir > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Kartu Lowongan === */
+.job-card {
+  border-left: 5px solid #ffc107;
+}
+
+/* === Gaya untuk Hero Kontak === */
+.hero-kontak {
+  background: url("img/kontakbg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-kontak::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-kontak > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Gaya untuk Peta === */
+.map-container {
+  overflow: hidden;
+  border: 1px solid #444;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
